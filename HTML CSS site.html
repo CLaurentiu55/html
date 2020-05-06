@@ -6,24 +6,32 @@
               font-weight:bold;
           }
 
-          h1  {
-             background-color: burlywood;
+          #tip  {
+             background-color: blanchedalmond;
           }
-         
+
+          .highlight {
+             font-size: x-large;
+          }
+
+          span  {
+             color: red;
+          }
+      
        </style>
        
     </head>
     <body>
-       <h2 style="font-size: 24;">Styling HTML with CSS</h2>
-       <p>CSS <span>stands for </span>C<span>ascading</span> S<span>tyle</span> S<span>heets</span></p>
+       <h1 style="font-size: 24;">Styling HTML with CSS</h1>
+       <p><b>CSS </b>stands for<b> C</b>ascading<b> S</b>tyle <b>S</b>heets</span></p>
        <p class="thik.text"></p>
-       <p>CSS describes <span>how HTML elements are to be displayed on screen, paper, or in other media.</span></p>
-       <p>CSS <span>saves a lot of work.</span> It can control the layout of multiple web pages all at once.</p>
+       <p>CSS describes <b>how HTML elements are to be displayed on screen, paper, or in other media.</b></p>
+       <p>CSS <b>saves a lot of work.</b> It can control the layout of multiple web pages all at once.</p>
        <p>CSS can be added to HTML elements in 3 ways:</p>
-       <p><span>Inline-</span> by using the style attribute in HTML elements</p>
-       <p><span>Internal-</span> by using a style element in the head section</p>
-       <p><span>External-</span> by using an external CSS file</p>
+       <p><b class="highlight">Inline-</b> by using the style attribute in HTML elements</p>
+       <p><b class="highlight">Internal-</b> by using a <span>style</span> element in the <span>head</span> section</p>
+       <p><b class="highlight">External-</b> by using an external CSS file</p>
        <p>The most common way to add CSS, is to keep the styles in separate CSS files. However, here we will use inline and internal styling, because this is easier to demonstrate, and easier for you to try it yourself.</p>
-       <h1>Tip: You can learn much more about CSS in our CSS Tutorial.</h1>
+       <p id="tip"><b>Tip:</b> You can learn much more about CSS in our <a href="https://www.w3schools.com/css/default.asp">CSS Tutorial.</a></h1>
     </body>
 </html>
