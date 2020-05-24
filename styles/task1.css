@@ -1,0 +1,26 @@
+.relative-block {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.inline-and-left {
+    display:inline;
+    float: left!important;
+}
+
+.position-r {
+    position: relative;
+}
+
+.height {
+    height: 36px;
+    line-height: 36px;
+}
+
+.inline-and-right {
+    display: inline; 
+    float: right!important;
+}
