@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Dockerignore</title>
         <link rel="stylesheet" type="text/css" href="styles/task2.css">
     </head>
-    <body>
-        <title></title>
-        <p class="bkg">Hello</p>
+    <body style="margin:20px;">
+        <div>
+            <h2>.dockerignore file</h2>
+
+            <p>Create a 
+                <code class="text-with-bkg">.dockerignore</code> file in the same directory as your 
+                <code class="text-with-bkg">Dockerfile</code> with following contetnt:
+            </p>
+
+           <div style="background-color: black; color: #c3bcbc;; padding: 15px 15px 15px 15px; border-radius: 5px">
+               <div>
+                    <code> 
+                        node_modules
+                    </code>
+                </div>
+                <div>
+                    <code> 
+                        npm-debug.log
+                    </code>
+               </div>
+           </div>
+
+           <p>This will prevent your local modules and debug logs
+                from being copied onto your Docker image and possibly overwriting 
+                modules installed within your image.</p>
+
+            <h2>Building your image</h2>
+
+            <p>Go to directory that has your <code class="text-with-bkg">Dockerfile</code> 
+                and run the following command to buil the Docker image. The <code class="text-with-bkg">-t</code>
+                flag lets you tag your image so it's easier to find later using the 
+                <code class="text-with-bkg">docker images</code> command:
+            </p>
+
+
+            <div style="background-color: black; color: #c3bcbc;; padding: 15px 15px 15px 15px; border-radius: 5px">
+                <code>docker build -t <span style="color: aqua;"><</span>your username<span style="color: aqua;">></span>/node-web-app .</code>
+            </div>
+        </div>
     </body>
 </html>
