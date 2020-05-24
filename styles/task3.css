@@ -1,0 +1,27 @@
+.code-culoare {
+    background-color: rgb(228, 224, 224);
+}
+
+.div-custom {
+    background-color: black;
+    color: #a19d9d;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+.color-text{
+    color: green;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.color-text-2 {
+    color: hotpink;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.div-custom-2 {
+    background-color: black;
+    color: #a19d9d;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}

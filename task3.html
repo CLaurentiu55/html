@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task3.css">
+    </head>
+    <body style="margin: 20px;">
+        <div>
+            <h2>Creatin a Dockerfile</h2>
+
+        <p>Creating empty file called <code class="code-culoare">Dockerfile:</code>
+        </p>
+
+        <div class="div-custom">
+            touch Dockerfile
+        </div>
+        <p>Open the <code class="code-culoare">Dockerfile</code> in your favorite text editor</p>
+        <p>The first thing we need to do is define from what image we want ro build from.
+            Here we will use the latest LTS(long term support) version <code class="code-culoare">12</code>
+            of <code class="code-culoare">node</code> avaible from the
+            <span class="color-text">
+                Docker hub:
+            </span>
+        </p>
+
+        <div class="div-custom">
+            <code class="color-text-2">FROM</code> node:12
+        </div>
+
+        <p>Next we create a directory to hold the application code inside image, 
+            this will be the working directory for your application:
+        </p>
+
+        <div class="div-custom-2">
+            <div>
+                <p># Create app directory</p>
+            </div>
+            <div>
+                <p><code class="color-text-2">WORKDIR</code> /usr/src/app</p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
