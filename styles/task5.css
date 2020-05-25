@@ -1,0 +1,45 @@
+.div-custom {
+    background-color: black;
+    color: #a19d9d;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+table {
+    width: 600px;
+}
+
+th {
+    text-align: left;
+}
+
+.tabel-rgb {
+    color: orange;
+}
+
+.color-text {
+    color: aqua;
+}
+
+.bkg-code {
+    background-color: rgb(185, 181, 181);
+}
+
+.tabel-color {
+    color: limegreen;
+}
+
+.container {
+    width:80%;
+    margin:auto;
+}
+
+.color-table {
+    color: limegreen;
+}
+
+.list-link {
+    color: limegreen!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}

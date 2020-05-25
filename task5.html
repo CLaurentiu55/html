@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task5.css">
+    </head>
+    <body style="margin: 25px;">
+        <div>
+            <h1>Test</h1>
+            <p>To test your app, get the port of your app that Docker mapped:</p>
+           <div class="div-custom">
+            <div>
+                <code> $ docker <span class="tabel-rgb">ps</span></code>
+                <br>
+                <br>
+                <br>
+                <code># Example</code>
+                <br>
+                <br>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>IMAGE</th>
+                        <th>COMMAND</th>
+                        <th>...</th>
+                        <th>PORTS</th>
+                    </tr>
+                    <tr>
+                        <td>ecce33b30ebf</td>
+                        <td><span><</span>your username<span>></span>/node-web-app:latest</td>
+                        <td><span class="tabel-rgb">npm</span> start</td>
+                        <td>...</td>
+                        <td><span class="tabel-rgb">49160</span><code class="color-text">-></code>
+                        <span class="tabel-rgb">8080</span></td>
+                    </tr>
+                </table>
+            </div>
+           </div>
+           <p>In the example above, Docker mapped the <code class="bkg-code">8080</code> 
+                port inside of the container to the port <code class="bkg-code">49160 </code> on your machine.</p>
+
+            <p>Now you can call your app using <code class="bkg-code">curl</code> (install if needed via:
+                <code class="bkg-code"> sudo apt-get install curl</code>):</p>
+
+            <div class="div-custom">
+                <code>$ <span class="tabel-rgb">curl</span> -i localhost:49160</code>
+                    <br>
+                    <br>
+                <code>HTTP/1.1 <span class="tabel-rgb">200</span> OK</code>
+                    <br>
+                <code> X-Powered-By: Express</code>
+                    <br>
+                <code> Content-Type: text/html; <span class="tabel-color">charset=</span>utf-8</code>
+                    <br>
+                <code>Content-Length: <span class="tabel-rgb">12</span></code>
+                    <br>
+                <code>ETag: W/<span class="tabel-color">"c-M6tWOb/Y57lesdjQuHeB1P/qTV0"</span></code>
+                    <br>
+                <code>Date: Mon, <span class="tabel-rgb">13</span> Nov <span class="tabel-rgb">2017 20</span>:53:59 GMT</code>
+                    <br>
+                <code>Connection: keep-alive</code>
+                    <br>
+                    <br>
+                <code>Hello world</code>
+            </div>
+
+            <p>We hope this tutorial helped you get up and running a simple Node.js application on Docker.</p>
+            <br>
+            <p>You can find more information about Docker and Node.js on Docker in the following places:</p>
+
+            <div class="color-table">
+                <ul>
+                    <li><a href="#" class="list-link">Official Node.js Docker Image</a></li>
+                    <li><a href="#" class="list-link">Node.js Docker Best Practices Guide</a></li>
+                    <li><a href="#" class="list-link">Official Docker documentation</a></li>
+                    <li><a href="#" class="list-link">Docker Tag on Stack Overflow</a></li>
+                    <li><a href="#" class="list-link">Docker Subreddit</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
