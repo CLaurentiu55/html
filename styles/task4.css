@@ -1,0 +1,26 @@
+.bkg-code {
+    background-color: rgb(185, 181, 181);
+}
+
+.div-custom {
+    background-color: black;
+    color: #a19d9d;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+.a-little-custom {
+    color: aqua;
+}
+
+table {
+    width: 600px;
+}
+
+th {
+    text-align: left;
+}
+
+.tabel-rgb {
+    color: orange;
+}

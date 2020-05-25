@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task4.css">
+    </head>
+    <body>
+        <div>
+            <h2>Building your image</h2>
+            <p>Go to directory that has your file <code class="bkg-code">Dockerfile</code>
+                and run the following command to build the Docker image.The <code class="bkg-code">-t</code>
+                flag lets you tag your image so it's easier to find later using the <code>Docker images</code> command:
+            </p>
+            <div class="div-custom">
+                <code>docker build -t
+                <span class="a-little-custom"><</span>your username<span class="a-little-custom">></span>
+                    /node-web-app .</code>
+            </div>
+            <p>Your image will now be listed by Docker:</p>
+            <div class="div-custom">
+                <div>
+                    <code> $ docker images</code>
+                    <br>
+                    <br>
+                    <br>
+                    <code># Example</code>
+                </div>
+                <div>
+                    <table>
+                            <tr>
+                                <th>REPOSITORY</th>
+                                <th>TAG</th>
+                                <th>ID</th>
+                                <th>CREATED</th>
+                               </tr>
+
+                            <tr>
+                                <td>node</td>
+                                <td><span class="tabel-rgb">12</span></td>
+                                <td>1934b0b038d1</td>
+                                <td><span class="tabel-rgb">5</span> days ago</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="a-little-custom"><</span>your username<span class="a-little-custom">></span>
+                                    /node-web-app .</td>
+                                <td>latest</td>
+                                <td>d64d3505b0d2</td>
+                                <td><span class="tabel-rgb">1</span> minute ago</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
