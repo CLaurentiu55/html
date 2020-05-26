@@ -1,0 +1,31 @@
+.orange-rgb {
+    color: orange;
+}
+
+.grey-rgb {
+    background-color: rgb(226, 225, 225);
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.blue-rgb {
+    color: rgb(0, 4, 255)
+}
+
+.aqua-rgb {
+    color: cyan;
+}
+
+.red-rgb {
+    color: darkred;
+}
+
+.green-rgb {
+ color: limegreen;
+}

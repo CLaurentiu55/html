@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task7.css">
+    </head>
+    <body>
+        <div>
+            <h2>Using CancellationTokens in your MVC Actions</h2>
+
+            <p><span class="grey-rgb">CancellationTokens</span> are lightweight objects that are created by a 
+                <span class="grey-rgb">CancellationTokenSource</span>.
+                When a <span class="grey-rgb">CancellationTokenSource</span>
+                is cancelled, it notifies all the consumers of the 
+                <span class="grey-rgb">CancellationToken</span>. 
+                This allows one central location to notify all of the code paths in your app that cancellation was requested.</p>
+
+            <p>When cancelled, the 
+                <span class="grey-rgb">IsCancellationRequested</span> property of the cancellation token will be set to 
+                <span class="grey-rgb">True</span>,
+                to indicate that the 
+                <span class="grey-rgb">CancellationTokenSource</span> has been cancelled. Depending on how you are using the token, 
+                you may or may not need to check this property yourself. I'll touch on this a little more in the next section, 
+                but for now, let's see how to use a 
+                <span class="grey-rgb">CancellationToken</span> in our action methods.</p>
+
+            <p>Lets consider the previous example again. 
+                We have a long-running action method 
+                (which for example, is generating a read-only report by calling out to a number of other APIs). 
+                As it as an expensive method, we want to stop executing the action as soon as possible
+                if the request is cancelled by the user.</p>
+
+            <p>The following code shows how we can hook into the central 
+                <span class="grey-rgb">CancellationTokenSource</span> for the request, 
+                by injecting a 
+                <span class="grey-rgb">CancellationToken</span> into the action method, and passing the parameter to the 
+                <span class="grey-rgb">Task.Delay</span> call:</p>
+
+
+                <div>
+                    <code>
+                        <span class="blue-rgb">public class</span> 
+                        <span class="aqua-rgb">SlowRequestController</span> : <span class="aqua-rgb">Controller</span>
+                            <br>
+                        {
+                            <br>
+                            <span class="blue-rgb pl-20">private readonly</span> <span class="aqua-rgb">ILogger</span> _logger;
+                            <br>
+                            <span class="blue-rgb pl-20">public</span> SlowRequestController
+                            (ILogger <span><</span>SlowRequestController<span>></span> logger)
+                            <br>
+                            <span class="pl-20">{</span>
+                            <br>
+                                <span class="pl-20">_logger = logger;</span>
+                            <br>
+                            <span class="pl-20">}</span>
+                            <br>
+                            <span class="pl-20">[<span class="aqua-rgb">HttpGet</span>(<span class="red-rgb">"/slowtest"</span>)]</span>
+                            <br>
+                            <span class="pl-20"><span class="blue-rgb">public async</span> Task<span><</span><span class="blue-rgb">string</span></span>
+                            <span class="pl-20"><span>></span>Get(<span class="aqua-rgb">CancellationToken</span> cancellationToken)</span>
+                            <br>
+                            <span class="pl-20">{</span>
+                            <br>
+                                <span class="pl-40">_logger.LogInformation(<span class="red-rgb">"Starting to do slow work"</span>);</span>
+                            <br>
+                                <span class="green-rgb pl-40">// slow async action, e.g. call external api</span>
+                            <br>
+                                <span class="pl-40"><span class="blue-rgb">await</span> Task.Delay(<span class="aqua-rgb">10</span>_000, cancellationToken);</span>
+                            <br>
+                                <span class="pl-40"><span class="blue-rgb">var</span> message = <span class="red-rgb">"Finished slow delay of 10 seconds."</span>;</span>
+                            <br>
+                                <span class="pl-40">_logger.LogInformation(message);</span>
+                            <br>
+                                <span class="pl-40"><span class="blue-rgb">return</span> message;</span>
+                            <br>    
+                                <span class="pl-20">}</span>
+                            <br>
+                        }
+                    </code>
+                </div>
+        </div>
+    </body>
+</html>
