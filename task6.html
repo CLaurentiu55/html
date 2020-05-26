@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/task6.css">
         <link rel="stylesheet" type="text/css" href="styles/task5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div>
@@ -12,33 +13,39 @@
              In this directory create a package.json file that describes your app and its dependencies:
         </p>
 
-        <div>
+        <div style="display: none;">
+            <i class="fa fa-car"></i>
+            <i class="fa fa-car" style="font-size:48px;"></i>
+            <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+        </div>
+
+        <div class="div-custom">
             <code>
                 {
                     <br>    
-                    <span class="tabel-rgb">"name"</span><span class="color-table">: "docker_web_app",</span>
+                    <span class="tabel-rgb pl-20">"name"</span><span class="color-table">: "docker_web_app",</span>
                     <br>
-                    <span class="tabel-rgb">"version"</span><span class="color-table">: "1.0.0",</span>
+                    <span class="tabel-rgb pl-20">"version"</span><span class="color-table">: "1.0.0",</span>
                     <br>
-                    <span class="tabel-rgb">"description"</span><span class="color-table">: "Node.js on Docker",</span>
+                    <span class="tabel-rgb pl-20">"description"</span><span class="color-table">: "Node.js on Docker",</span>
                     <br>
-                    <span class="tabel-rgb">"author"</span><span class="color-table">: "First Last</span> <span class="color-table"><</span><span class="color-table">first.last@example.com</span><span class="color-table">>"</span>,
+                    <span class="tabel-rgb pl-20">"author"</span><span class="color-table">: "First Last</span> <span class="color-table"><</span><span class="color-table">first.last@example.com</span><span class="color-table">>"</span>,
                     <br>
-                    <span class="tabel-rgb">"main"</span><span class="color-table">: "server.js",</span>
+                    <span class="tabel-rgb pl-20">"main"</span><span class="color-table">: "server.js",</span>
                     <br>
-                    <span class="tabel-rgb">"scripts"</span><span class="color-table">: </span>{
+                    <span class="tabel-rgb pl-20">"scripts"</span><span class="color-table">: </span>{
                     <br>
-                    <span class="tabel-rgb">"start"</span><span class="color-table">: "node server.js"</span>
+                    <span class="tabel-rgb pl-40">"start"</span><span class="color-table">: "node server.js"</span>
                     <br>
-                    },
+                    <span class="pl-20">},</span>
                     <br>
-                    <span class="tabel-rgb">"dependencies"</span>{<span class="color-table">: </span>
+                    <span class="tabel-rgb pl-20">"dependencies"</span>{<span class="color-table">: </span>
                     <br>
-                        <span class="tabel-rgb">"express"</span><span class="color-table">: "^4.16.1"</span>
+                        <span class="tabel-rgb pl-40">"express"</span><span class="color-table">: "^4.16.1"</span>
                     <br>
-                    }
+                    <span class="pl-20">}</span>
                     <br>
-        }
+                }
             </code>
         </div>
         <p>
@@ -47,7 +54,46 @@
             <code>package-lock.json</code>
             file which will be copied to your Docker image.</p>
             <br>
-            <p>Then, create a <code class="bkg-code">server.js</code> file that defines a web app using the <span class="color-table">Express.js</span> framework:</p>
+            <p>Then, create a <code class="bkg-code">server.js</code>
+                 file that defines a web app using the <span class="color-table">Express.js</span> framework:</p>
+
+            <div class="div-custom">
+                <code>
+                    <span class="tabel-color">'use strict'</span>;
+                        <br>
+                        <br>
+                    <span class="new-class">const</span> express = <span class="tabel-rgb">require</span>
+                    (<span class="tabel-color">'express'</span>);
+                        <br>
+                        <br>
+                    <span class="grey-cls">// Constants</span>
+                        <br>
+                    <span class="new-class">const</span> <span class="yellow-custom">PORT</span> 
+                    <span class="tabel-color">=</span> <span class="tabel-rgb">8080</span>;
+                        <br>
+                    <span class="new-class">const</span> <span class="yellow-custom">HOST</span>
+                    <span class="tabel-color">= '0.0.0.0'</span>;
+                        <br>
+                        <br>
+                    <span class="grey-cls">// App</span>
+                    <span class="new-class">const</span> app <span class="tabel-color">=</span> <span class="tabel-rgb">express</span>();
+                    app.<span class="tabel-rgb">get</span>(<span class="tabel-color">'/'</span>, (req, res) <span class="tabel-color">=></span> {
+                        <br>
+                    res.<span class="tabel-rgb">send</span>(<span class="tabel-color">'Hello World'</span>);
+                        <br>
+                    });
+                        <br>
+                        <br>
+                    app.<span class="tabel-rgb">listen</span>(<span class="yellow-custom">PORT</span>, <span class="yellow-custom">HOST</span>);
+                        <br>
+                    console.<span class="tabel-rgb">log</span>(<span class="tabel-color">Running on http://</span>${<span class="yellow-custom">HOST</span>}<span class="tabel-color">:</span>${<span class="yellow-custom">PORT</span>});
+                        <br>
+                        <br>
+                </code>
+            </div>
+            <br>
+            <p> In the next steps, we'll look at how you can run this app inside a Docker container 
+                using the official Docker image. First, you'll need to build a Docker image of your app.</p>
         </div>
     </body>
 </html>

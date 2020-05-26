@@ -34,12 +34,28 @@ th {
     margin:auto;
 }
 
-.color-table {
-    color: limegreen;
-}
-
 .list-link {
     color: limegreen!important;
     cursor: pointer;
     text-decoration: none!important;
+}
+
+.new-class {
+    color: palevioletred;
+}
+
+.grey-cls {
+    color: rgb(82, 80, 80);
+}
+
+.yellow-custom {
+    color: yellow;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-40 {
+    padding-left: 40px;
 }
