@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task6.css">
+        <link rel="stylesheet" type="text/css" href="styles/task5.css">
+    </head>
+    <body>
+        <div>
+            <h2>Create the Node.js app</h2>
+        <p>
+            First, create a new directory where all the files would live.
+             In this directory create a package.json file that describes your app and its dependencies:
+        </p>
+
+        <div>
+            <code>
+                {
+                    <br>    
+                    <span class="tabel-rgb">"name"</span><span class="color-table">: "docker_web_app",</span>
+                    <br>
+                    <span class="tabel-rgb">"version"</span><span class="color-table">: "1.0.0",</span>
+                    <br>
+                    <span class="tabel-rgb">"description"</span><span class="color-table">: "Node.js on Docker",</span>
+                    <br>
+                    <span class="tabel-rgb">"author"</span><span class="color-table">: "First Last</span> <span class="color-table"><</span><span class="color-table">first.last@example.com</span><span class="color-table">>"</span>,
+                    <br>
+                    <span class="tabel-rgb">"main"</span><span class="color-table">: "server.js",</span>
+                    <br>
+                    <span class="tabel-rgb">"scripts"</span><span class="color-table">: </span>{
+                    <br>
+                    <span class="tabel-rgb">"start"</span><span class="color-table">: "node server.js"</span>
+                    <br>
+                    },
+                    <br>
+                    <span class="tabel-rgb">"dependencies"</span>{<span class="color-table">: </span>
+                    <br>
+                        <span class="tabel-rgb">"express"</span><span class="color-table">: "^4.16.1"</span>
+                    <br>
+                    }
+                    <br>
+        }
+            </code>
+        </div>
+        <p>
+            With your new <code class="bkg-code">package.json</code> file, run <code class="bkg-code">npm install.</code>
+            If you are using <code class="bkg-code">npm</code> version 5 or later, this will generate a 
+            <code>package-lock.json</code>
+            file which will be copied to your Docker image.</p>
+            <br>
+            <p>Then, create a <code class="bkg-code">server.js</code> file that defines a web app using the <span class="color-table">Express.js</span> framework:</p>
+        </div>
+    </body>
+</html>
