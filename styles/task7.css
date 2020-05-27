@@ -29,3 +29,16 @@
 .green-rgb {
  color: limegreen;
 }
+
+.b-r-custom {
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb(235, 227, 227);
+}
+
+.margin-body {
+    margin: 25px;
+}
+
+.padding-custom {
+    padding-left: 15px;
+}

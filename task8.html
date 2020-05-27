@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task7.css">
+        <link rel="stylesheet" type="text/css" href="styles/task8.css">
+    </head>
+    <body>
+        <p class="pl-40"><em>I'm ignoring the fact that long running actions are generally a bad idea. 
+            If you find yourself with many long running actions in your app, you might be better off considering 
+            a solution based on CQRS and messaging queues, so you can quickly return a response to the user, 
+            and can process the result of the action on a background thread.</em></p>
+        <p>For example, consider the following MVC controller. This is a toy example, 
+            that simply waits for 10s before returning a message to the user, but the <span class="grey-rgb">Task.Delay()</span> 
+            could be any long-running process, such as generating a large report to return to the user.</p>
+
+            <div class="b-r-custom padding-custom">
+                <code >
+                    <span class="blue-rgb">public class</span> 
+                    <span class="aqua-rgb">SlowRequestController</span> : <span class="aqua-rgb">Controller</span>
+                        <br>
+                    {
+                        <br>
+                        <span class="blue-rgb pl-20">private readonly</span> <span class="aqua-rgb">ILogger</span> _logger;
+                        <br>
+                        <span class="blue-rgb pl-20">public</span> SlowRequestController
+                        (ILogger <span><</span>SlowRequestController<span>></span> logger)
+                        <br>
+                        <span class="pl-20">{</span>
+                        <br>
+                            <span class="pl-20">_logger = logger;</span>
+                        <br>
+                        <span class="pl-20">}</span>
+                        <br>
+                        <span class="pl-20">[<span class="aqua-rgb">HttpGet</span>(<span class="red-rgb">"/slowtest"</span>)]</span>
+                        <br>
+                        <span class="pl-20"><span class="blue-rgb">public async</span> Task<span><</span><span class="blue-rgb">string</span></span>
+                        <span class="pl-20"><span>></span>Get(<span class="aqua-rgb">CancellationToken</span> cancellationToken)</span>
+                        <br>
+                        <span class="pl-20">{</span>
+                        <br>
+                            <span class="pl-40">_logger.LogInformation(<span class="red-rgb">"Starting to do slow work"</span>);</span>
+                        <br>
+                            <span class="green-rgb pl-40">// slow async action, e.g. call external api</span>
+                        <br>
+                            <span class="pl-40"><span class="blue-rgb">await</span> Task.Delay(<span class="aqua-rgb">10</span>_000, cancellationToken);</span>
+                        <br>
+                            <span class="pl-40"><span class="blue-rgb">var</span> message = <span class="red-rgb">"Finished slow delay of 10 seconds."</span>;</span>
+                        <br>
+                            <span class="pl-40">_logger.LogInformation(message);</span>
+                        <br>
+                            <span class="pl-40"><span class="blue-rgb">return</span> message;</span>
+                        <br>    
+                            <span class="pl-20">}</span>
+                        <br>
+                        }
+                    </code>
+                </div>
+                <p>If we hit the URL <span class="grey-rgb">/slowtest</span> then the request will run for 10s, and eventually will return the message:</p>
+            </div>
+    </body>
+</html>
