@@ -24,12 +24,46 @@
 
 .cifre-rgb {
     text-decoration: none;
+    background-color: rgb(214, 209, 209);
 }
 
-.bkg-color {
-    background-color: rgb(199, 194, 194);
+.marime-bkg {
+    max-width: 20px;
 }
 
 .width-height {
-    max-height: 25px;
+    max-height: 5px;
+}
+
+.width-height-2 {
+    max-height: 150px;
+}
+
+.width-height-3 {
+    max-height: 5;
+}
+
+.cv-nou{
+    text-decoration: none;
+}
+.sos-buton {
+    border: 1px solid #777;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 1px;
+    padding: 5px 25px 5px 1px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.UNU {
+    display:inline;
+    float: left;
+    text-align: right;
+}
+
+.DOI {
+    display:inline;
+    float: left;
+    text-align: right;
 }
