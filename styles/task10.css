@@ -1,0 +1,35 @@
+.text-custom {
+    font-family: 'Quicksand',sans-serif;
+    line-height: 1.5;
+}
+
+.text-rgb {
+    border: 1px solid #777;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.border-custom {
+    margin: 0 1px;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.button-custom {
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.cifre-rgb {
+    text-decoration: none;
+}
+
+.bkg-color {
+    background-color: rgb(199, 194, 194);
+}
+
+.width-height {
+    max-height: 25px;
+}

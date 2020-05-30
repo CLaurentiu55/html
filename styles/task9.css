@@ -1,0 +1,13 @@
+.pr-500 {
+    padding-right: 500px;
+}
+
+.th-custom {
+    background-color: rgb(228, 225, 225);
+}
+
+pre {
+    font-size: .875rem;
+    border: 1px solid hsla(0,0%,89%,1);
+    padding: 1rem;
+}
