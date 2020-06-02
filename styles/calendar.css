@@ -1,0 +1,31 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 750px;
+}
+
+.border-bottom {
+    border-bottom: grey 10px;
+    border-radius: 5px;
+}
+
+.border-top {
+    border-top: grey 10px;
+    border-radius: 5px;
+}
+
+.border-right {
+    border-right: grey 10px;
+    border-radius: 5px;
+}
+
+.border-left {
+    border-left: grey 10px;
+    border-radius: 5px;
+}
+
+.grid-icon {
+    border: 1px solid;
+    width: 20px;
+    margin: 10px;
+}
+
