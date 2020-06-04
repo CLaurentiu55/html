@@ -56,33 +56,52 @@ body {
 .box {
     position: absolute;
     top: 370px;
-    left: 80px;
+    left: 100px;
 }
 
 .box-2 {
     position: absolute;
     top: 350px;
-    left: 113px;
+    left: 123px;
 }
 
 .box-3 {
     position: absolute;
     top: 370px;
-    left: 220px;
+    left: 215px;
 }
 
 .flexbox-container {
     display: flex;
 }
 
-.flexbox-item {
-    width: 20px;
-    margin: 15px;
-    border: 3px solid #333;
-    background-color: #dfdfdf;
+.right-and-down-border {
+    margin: 1px;
+    width: 30px;
+    height: 30px; 
+    border: 1px solid black; 
+    border-block-end-style: none; 
+    border-left-style: none;
+    background-color: #ffffff;
+    min-height: 20px;
+    align-self: flex-end;
+    align-self: center;
 }
 
-.flexbox-item-1 {
+.left-and-up-border {
+    margin: 1px;
+    width: 30px;
+    height: 30px; 
+    border: 1px solid black; 
+    border-block-end-style: none; 
+    border-right-style: none;
+    background-color: #ffffff;
+    min-height: 20px;
+    align-self: flex-end;
+    align-self: center;
+}
+
+.flexbox--1 {
     min-height: 20px;
     align-self: flex-end;
 }
@@ -101,171 +120,55 @@ body {
 }
 
 .child-1 {
-    width: 20;
+    width: 20px;
 }
 
-.child-2 {
-    width: 20;
+.border-top {
+    border-top: 1px grey;
+    border-right: 1px grey;
 }
 
-.child-3 {
-    width: 20;
+.border-bottom {
+    border-bottom: 1px grey;
+    border-left: 1px grey;
 }
 
-.child-4 {
-    width: 20;
+.text-rgb {
+    color: rgb(196, 194, 194) !important;
 }
 
-.child-5 {
-    width: 20;
+.cifre-culoare {
+    color: rgb(0, 204, 255);
 }
 
-.child-6 {
-    width: 20;
+.cifre-culoare-2 {
+    color: rgb(0, 38, 255);
 }
 
-.child-7 {
-    width: 20;
+.cifre-culoare-3 {
+    color: #ffffff !important;
+    background-color: sandybrown;
 }
 
-.child-8 {
-    
+.left-and-up-border {
+    padding: 5px;
+}   
+
+.border-radius {
+    margin-left: -3px;
+    border: 1px solid rgb(206, 201, 201);
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 40405px;
 }
 
-.child-9 {
-    
+.down-border {
+    border-bottom: 1px solid black;
 }
 
-.child-10 {
-    
+.right-border {
+    border-right: 1px solid black;
 }
 
-.child-11 {
-    
-}
-
-.child-12 {
-    
-}
-
-.child-13 {
-    
-}
-
-.child-14 {
-    
-}
-
-.child-15 {
-    
-}
-
-.child-16 {
-    
-}
-
-.child-17 {
-    
-}
-
-.child-18 {
-    
-}
-
-.child-19 {
-    
-}
-
-.child-20 {
-    
-}
-
-.child-21 {
-    
-}
-
-.child-22 {
-    
-}
-
-.child-23 {
-    
-}
-
-.child-24 {
-    
-}
-
-.child-25 {
-    
-}
-
-.child-26 {
-    
-}
-
-.child-27 {
-    
-}
-
-.child-28 {
-    
-}
-
-.child-29 {
-    
-}
-
-.child-30 {
-    
-}
-
-.child-31 {
-    
-}
-
-.child-32 {
-    
-}
-
-.child-33 {
-    
-}
-
-.child-34 {
-    
-}
-
-.child-35 {
-    
-}
-
-.child-36 {
-    
-}
-
-.child-37 {
-    
-}
-
-.child-38 {
-    
-}
-
-.child-39 {
-    
-}
-
-.child-40 {
-    
-}
-
-.child-41 {
-    
-}
-
-.child-42 {
-    
-}
 
 
