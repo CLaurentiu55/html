@@ -155,12 +155,12 @@ body {
 }   
 
 .border-radius {
-    height: ;
     margin-left: 20px;
     border: 1px solid rgb(206, 201, 201);
     padding-right: 4px;
     padding-left: 4px;
     border-radius: 40405px;
+    margin-bottom: 1px;
 }
 
 .down-border {
@@ -177,5 +177,26 @@ body {
     height: 0px;
 }
 
+.box-4 {
+    position: absolute;
+    top: 3200px;
+    left: 580px;
+}
+
+.box-5 {
+    position: absolute;
+    top: 3180px;
+    left: 603px;
+}
+
+.box-6 {
+    position: absolute;
+    top: 3200px;
+    left: 695px;
+}
+
+.border-position {
+    margin-left: 15px;
+}
 
 
