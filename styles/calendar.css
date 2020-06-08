@@ -203,5 +203,10 @@ body {
     margin-top: -2px;
 }
 
+.calendar-days {
+    float: left;
+    margin-right: 17px;
+}
+
 
 
