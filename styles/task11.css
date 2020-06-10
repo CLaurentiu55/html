@@ -43,4 +43,26 @@
 
 .shadow {
     box-shadow: 0px 5px 5px grey;
-  }
+}
+
+.h2-custom {
+  color: white; 
+  background-color: royalblue;
+  padding: 17px 14px 17px 37px;
+}
+.h3-custom {
+  color: royalblue; 
+}
+
+.div-margin {
+    padding: 120px 30px 0px 30px;
+}
+
+.code-custom {
+    background-color: rgb(226, 224, 224) !important;
+    color: rgb(73, 73, 73);
+}
+
+.parent {
+    height: 1000vh;
+}

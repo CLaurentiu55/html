@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="body-bkg">
-        <div>
+        <div class="parent">
             <div class="pos-abs w-100">
                 <div style="display:inline-block">
                     <div class="fl">
@@ -88,6 +88,116 @@
                             </label>
                         </div>
                     </div>
+                </div>
+
+            </div>
+            <div class="div-margin">
+                <div style="width: 20%; float: left;">
+                    <div>
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\foaiepttasku11.png" style="width: 255px;">
+                        <h2 class="h2-custom" style="width: 80%; font-family: inherit;">Learn Kubernetes</h2>
+                        <h3 class="h3-custom" style="margin-left: 50px; font-family: cursive;">Absolute Beginners</h3>
+                        <p class="h2-custom">Kubernetes tutorial</p>
+                        <div>
+                            <ul>
+                                <li>Kubernetes-home</li>
+                                <hr>
+                                <li>Kubernetes-Overview</li>
+                                <hr>
+                                <li>Kubernetes-Architecture</li>
+                                <hr>
+                                <li>Kubernetes-Setup</li>
+                                <hr>
+                                <li>Kubernetes-Images</li>
+                                <hr>
+                                <li>Kubernetes-Jobes</li>
+                                <hr>
+                                <li>Kubernetes-Labels & Selectors</li>
+                                <hr>
+                                <li>Kubernetes-Namespace</li>
+                                <hr>
+                                <li>Kubernetes-Node</li>
+                                <hr>
+                                <li>Kubernetes-Service</li>
+                                <hr>
+                                <li>Kubernetes-Pod</li>
+                                <hr>
+                                <li>Kubernetes-Replication Controller</li>
+                                <hr>
+                                <li>Kubernetes-Replica Sets</li>
+                                <hr>
+                                <li>Kubernetes-Deployments</li>
+                                <hr>
+                                <li>Kubernetes-Volumes</li>
+                                <hr>
+                                <li>Kubernetes-Secrets</li>
+                                <hr>
+                                <li>Kubernetes-Network Policy</li>
+                            </ul>
+                            <p class="h2-custom">Advanced Kubernetes</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 60%; float: left; background-color: white; margin-left: 15px;">
+                    <h1 style="margin-left: 225px; color: rgb(124, 120, 120);">Kubernetes-Service</h1>
+                    <hr style="padding: 2px; margin: 20px;">
+                    <hr style="margin: 20px;">
+                    <div style="display: flow-root;">
+                        <i class="fa fa-arrow-left" style="float:left; margin-top: 15px; border: 1px solid grey; 
+                        border-radius: 999px; padding: 2px;"></i>
+                        <p style="float:left;">Previous Page</p>
+                        <i class="fa fa-arrow-right" style="float:right; margin-top: 15px; border: 1px solid grey; 
+                        border-radius: 999px; padding: 2px;"></i>
+                        <p style="float: right">Next Page</p>
+                    </div>
+                    <hr style="margin: 20px;">
+                    <div>
+                        <p style="margin: 20px;">A service can be defined as a logical set of pods. 
+                            It can be defined as an abstraction on the top of the pod which provides 
+                            a single IP address and DNS name by which pods can be accessed. 
+                            With Service, it is very easy to manage load balancing configuration. 
+                            It helps pods to scale very easily.
+                        </p>
+                        <p style="margin-left: 20px;">A service is a REST object in Kubernetes 
+                            whose definition can be posted to 
+                            Kubernetes apiServer on the Kubernetes master to create a new instance.
+                        </p>
+                        <h1 style="margin-left: 20px;">Service without Selector</h1>
+                    </div>
+                    <div class="code-custom" style="margin: 20px;">
+                        <code>
+                            <div>apiVersion: v1</div>
+                            <div>kind: Service</div>
+                            <div>metadata:</div>
+                               <div style="margin-left: 20px;">name: Tutorial_point_service</div>
+                            <div>spec:</div>
+                               <div style="margin-left: 20px;">ports:</div>
+                               <div style="margin-left: 20px;">- port: 8080</div>
+                               <div style="margin-left: 20px;">targetPort: 31999</div>
+                        </code>
+                    </div>
+                    <p style="margin-left: 20px;">The above configuration will create a service with the name Tutorial_point_service.</p>
+                    <h1 style="margin-left: 20px;">Service Config File with Selector</h1>
+                    <div class="code-custom" style="margin: 20px;">
+                        <code>
+                            <div>apiVersion: v1</div>
+                            <div>kind: Service</div>
+                            <div>metadata:</div>
+                            <div style="margin-left: 20px;">name: Tutorial_point_service</div>
+                            <div>spec:</div>
+                            <div style="margin-left: 20px;">selector:</div>
+                                <div style="margin-left: 40px;">application: "My Application" -------------------> (Selector)</div>
+                            <div style="margin-left: 20px;">ports:</div>
+                            <div style="margin-left: 20px;">- port: 8080</div>
+                            <div style="margin-left: 20px;">targetPort: 31999</div>
+                        </code>
+                    </div>
+                    <p style="margin-left: 20px;">In this example, we have a selector; 
+                        so in order to transfer traffic, we need to create an endpoint manually.
+                    </p>
+                </div>
+                <div style="width: 20px; float: left;">
+
                 </div>
             </div>
         </div>
