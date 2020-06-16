@@ -1,0 +1,40 @@
+.grey-cls {
+    color: rgb(0, 0, 0);
+    background-color: rgb(214, 212, 212);
+}
+
+.tabela {
+    margin-top: -35px; 
+    padding: 13px; 
+    background-color: rgb(211, 210, 210);
+}
+
+
+.right-and-down-border-2 {
+    margin: 1px;
+    width: 672px;
+    height: 5px; 
+    border: 1px solid black;
+    border-block-end-style: none;  
+    border-top-style: none;
+    border-bottom-style: solid;
+    background-color: #ffffff;
+    min-height: 20px;
+    align-self: flex-end;
+    align-self: center;
+    padding: 0px;
+}
+
+.left-and-up-border-2 {
+    margin: 1px;
+    width: 672px;
+    height: 5px; 
+    border: 1px solid black; 
+    border-block-end-style: none; 
+    border-right-style: none;
+    background-color: #ffffff;
+    min-height: 20px;
+    align-self: flex-end;
+    align-self: center;
+    padding: 0px;
+}
