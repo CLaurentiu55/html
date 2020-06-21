@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/task12.css">
+        <link rel="stylesheet" type="text/css" href="styles/task14.css">
+        <link rel="stylesheet" type="text/css" href="styles/task11.css">
+        <link rel="stylesheet" type="text/css" href="styles/calendar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>
+    </head>
+    <body style="background-image: url('images/dolari.png'); background-repeat: no-repeat; background-size: cover;">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div>
+                <a href="#" class="navbar-brand fl">SpendsManager</a>
+                <a href="#" class="navbar-brand fl">Purchases</a>
+                <a href="#" class="navbar-brand fl">Statistics</a>
+                <div class="dropdown fl" style="padding-right: 15px;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Groups
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Groups(All)</a>
+                        <a class="dropdown-item" href="#">test(liad)</a>
+                        <a class="dropdown-item" href="#">aaa(bbb)</a>
+                        <a class="dropdown-item" href="#">moto(test))</a>
+                    </div>
+                </div>
+                <div class="dropdown fl" style="padding-right: 15px;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        View Categories
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="E:\laurentiu\html\task15pagina2">Events</a>
+                        <a class="dropdown-item" href="#">Event Categories</a>
+                        <a class="dropdown-item" href="#">Category</a>
+                    </div>
+                </div>
+                <div class="dropdown fl" style="padding-right: 15px;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Create Category
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Create Event</a>
+                        <a class="dropdown-item" href="#">Create Event Category</a>
+                        <a class="dropdown-item" href="#">Create Category</a>
+                    </div>
+                </div>
+                <a href="#" class="navbar-brand fl">Chat <span style="background-color: red; padding: 3px 10px 3px 10px; border-radius: 1000px;">3</span></a>
+                <a href="#" class="navbar-brand ml-auto" style="padding-left: 115px;">Hello test@test.test!</a>
+                <a href="#" class="navbar-brand fr ml-auto">Logout</a>
+            </div>
+        </nav>
+        <div style="padding: 10px 100px 0px 100px; background-color: white;">
+            <h1>Index</h1>
+            <div>
+                <button class="btn btn-secundary" style="border-color: grey;">Filters</button>
+                <button class="btn btn-secundary" style="border-color: grey;">Create New</button>
+                <button class="btn btn-primary fr">Create New Purchase Template</button>
+            </div>
+            <button class="btn btn-primary fr">Create New Product Template</button>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Name</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>LocationName</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>TotalAmount</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>PurchaseDate</h5>
+                </div>
+                <div class="col-md-1">
+                    <h5>Comment</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>img</h5>
+                </div>
+            </div>
+            <div>
+                <div style="border: 1px solid slategrey; background-color: rgb(231, 221, 221);" class="row">
+                    <div class="col-md-3">
+                        <h5>test</h5>
+                        <p>test</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>test</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>43</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>25.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\aaaaa.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>lunch</h5>
+                        <p>taking lunch with pleasure</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>mf</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>100</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>25.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\bbbbbbb.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+                <div style="border: 1px solid slategrey; background-color: rgb(231, 221, 221);" class="row">
+                    <div class="col-md-3">
+                        <h5>lunch</h5>
+                        <p>taking lunch with pleasure</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>metro</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>240</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>25.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\bbbbbbb.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>lunch</h5>
+                        <p>taking lunch with pleasure</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>fy</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>54</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>24.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\bbbbbbb.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+                <div style="border: 1px solid slategrey; background-color: rgb(231, 221, 221);" class="row">
+                    <div class="col-md-3">
+                        <h5>test</h5>
+                        <p>test</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>yoyo</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>5400</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>24.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\aaaaa.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>test</h5>
+                        <p>test</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>mf</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>890</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>24.03.2020</p>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="C:\Users\nikol\Pictures\Camera Roll\bbbbbbb.png" style="width: 100%;">
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-pencil-square-o" style="color: blue;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-bars" style="color: green;">|</i>
+                    </div>
+                    <div class="fr">
+                        <i class="fa fa-trash" style="color: red;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
