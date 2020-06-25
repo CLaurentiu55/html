@@ -1,0 +1,68 @@
+.body-stil {
+    background-image: url('images/dolari.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.pad-15 {
+    padding-right: 15px;
+}
+
+.pad-10-3 {
+    background-color: red;
+    padding: 3px 10px 3px 10px; 
+    border-radius: 1000px;
+}
+
+.hhh {
+    padding: 10px 100px 0px 100px; 
+    background-color: white;
+}
+
+.culoare-perete {
+    border-color: grey;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.pl-115 {
+    padding-left: 115px;
+}
+
+.opacity {
+    background-color: white; 
+    opacity: 0.8; 
+    padding: 10px 100px 0px 100px;
+}
+
+.border-bkg {
+    border: 1px solid blue;
+}
+
+.ceva-border {
+    margin-top: -100px; 
+    width: 37%;
+}
+
+.margin-top {
+    margin-top: -100px;
+}
+
+.padding {
+    padding: 10px 0px 0px 0px;
+}
+
+.opacity-2 {
+    background-color: lightcyan; 
+    opacity: 0.8; 
+    padding: 10px 100px 0px 100px;
+}

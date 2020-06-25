@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/task12.css">
         <link rel="stylesheet" type="text/css" href="styles/task14.css">
+        <link rel="stylesheet" type="text/css" href="styles/task15.css">
         <link rel="stylesheet" type="text/css" href="styles/task11.css">
         <link rel="stylesheet" type="text/css" href="styles/calendar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,7 +25,7 @@
                 <a href="#" class="navbar-brand fl">SpendsManager</a>
                 <a href="#" class="navbar-brand fl">Purchases</a>
                 <a href="#" class="navbar-brand fl">Statistics</a>
-                <div class="dropdown fl" style="padding-right: 15px;">
+                <div class="dropdown fl pad-15">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Groups
                     </button>
@@ -35,7 +36,7 @@
                         <a class="dropdown-item" href="#">moto(test))</a>
                     </div>
                 </div>
-                <div class="dropdown fl" style="padding-right: 15px;">
+                <div class="dropdown fl pad-15">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         View Categories
                     </button>
@@ -45,7 +46,7 @@
                         <a class="dropdown-item" href="#">Category</a>
                     </div>
                 </div>
-                <div class="dropdown fl" style="padding-right: 15px;">
+                <div class="dropdown fl pad-15">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Create Category
                     </button>
@@ -55,12 +56,12 @@
                         <a class="dropdown-item" href="#">Create Category</a>
                     </div>
                 </div>
-                <a href="#" class="navbar-brand fl">Chat <span style="background-color: red; padding: 3px 10px 3px 10px; border-radius: 1000px;">3</span></a>
-                <a href="#" class="navbar-brand ml-auto" style="padding-left: 115px;">Hello test@test.test!</a>
+                <a href="#" class="navbar-brand fl">Chat <span class="pad-10-3">3</span></a>
+                <a href="#" class="navbar-brand ml-auto pl-115">Hello test@test.test!</a>
                 <a href="#" class="navbar-brand fr ml-auto">Logout</a>
             </div>
         </nav>
-        <div style="background-color: lightcyan; opacity: 0.8; padding: 10px 100px 0px 100px;">
+        <div class="opacity-2">
             <div>
                 <div>
                     <div>
@@ -73,80 +74,84 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-6">
-                    <h5>Name</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Name</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>ImageHoldeField<h5>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="file" class="form-control" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5>TotalAmount</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Category</h5>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h5>ImageHoldeField<h5>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <input type="file" class="form-control" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <h5>LocationName</h5>
-                </div>
-                <div class="col-md-6">
-                    <h5>ReceiptImageHolderFile</h5>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <input type="file" class="form-control" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <h5>TotalAmount</h5>
-                </div>
-                <div class="col-md-6">
-                    <h5>Category</h5>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="0" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="--Select Category--" style="padding-right: 362px;">
-                    <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
-                </div>
-                <div class="col-md-6">
-                    <h5>PurchaseDate</h5>
-                </div>
-                <div class="col-md-6">
-                    <h5>Event</h5>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="06/20/2020" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="--Select Event--" style="padding-right: 362px; ">
-                    <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
-                </div>
-                <div class="col-md-6">
-                    <h5>Description</h5>
-                </div>
-                <div class="col-md-6">
-                    <h5>Event Category</h5>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" placeholder="--Select EventCategory--" style="padding-right: 362px;">
-                    <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
-                </div>
-                <div class="col-md-12">
-                    <h5>Comment</h5>
-                </div>
-                <div class="col-md-11">
-                    <input type="text" style="padding-right: 385px;">
-                </div>
-                <div class="col-md-1">
-                    <button class="btn btn-primary">Create</button>
-                </div>
-                <div>
-                    <a href="#" style="padding-left: 15px;">Back to List</a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="file" class="form-control" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5>LocationName</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>ReceiptImageHolderFile</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="0" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="--Select Category--" style="padding-right: 362px;">
+                        <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>PurchaseDate</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Event</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="06/20/2020" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="--Select Event--" style="padding-right: 362px; ">
+                        <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Event Category</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="--Select EventCategory--" style="padding-right: 362px;">
+                        <select name="cars" id="cars" class="fr" style="margin: -30px -6px 0px 0px; padding-bottom: 5px;"></select>
+                    </div>
+                    <div class="col-md-12">
+                        <h5>Comment</h5>
+                    </div>
+                    <div class="col-md-11">
+                        <input type="text" style="padding-right: 385px;">
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-primary">Create</button>
+                    </div>
+                    <div>
+                        <a href="#" style="padding-left: 15px;">Back to List</a>
+                    </div>
                 </div>
             </div>
         </div>
