@@ -1,0 +1,71 @@
+.padding-1 {
+    padding: 50px;
+}
+
+.padding-r {
+    padding-right: 260px;
+}
+
+.button1 {
+    border-color: orange;
+    border-radius: 30%;
+    background-color: white;
+}
+
+.orange {
+    color: orange;
+}
+
+.padding-l {
+    padding-left: 100px;
+}
+
+.padl {
+    padding-left: 200px;
+}
+
+.yellow {
+    color: rgb(255, 196, 0);
+}
+
+
+.width {
+    width: 100%;
+}
+
+.pl{
+    padding-left: 500px;
+}
+
+.black {
+    color: black;
+}
+
+.white-bkg {
+    background-color: white;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.padleft {
+    padding-left: 30px;
+}
+
+.width90 {
+    width: 97%;
+}
+
+.padtop {
+    padding: 25px;
+}
+
+.padding {
+    padding-left: 60px;
+    background-color: rgb(245, 245, 245);
+}
