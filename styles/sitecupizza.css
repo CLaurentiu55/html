@@ -21,7 +21,7 @@
 }
 
 .padl {
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 .yellow {
@@ -68,4 +68,8 @@
 .padding {
     padding-left: 60px;
     background-color: rgb(245, 245, 245);
+}
+
+.leftpad {
+    padding-left: 600px;
 }
