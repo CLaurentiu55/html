@@ -1,0 +1,23 @@
+.searchbarwidth {
+    width: 40%;
+    overflow: auto;
+}
+
+.sec-block-pad{
+    width: 77%;
+    padding-top: 35px;
+}
+
+.icon-margin{
+    margin-left: 20px;
+}
+
+.icon-pad{
+    padding: 25px;
+    font-size: 25px;
+}
+
+.first-block-pad{
+    padding-right: 200px;
+    padding-top: 35px;
+}
