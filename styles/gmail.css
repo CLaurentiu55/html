@@ -1,11 +1,11 @@
 .searchbarwidth {
-    width: 40%;
+    width: 45%;
     overflow: auto;
 }
 
 .sec-block-pad{
-    width: 77%;
-    padding-top: 35px;
+    width: 83%;
+    padding-top: 15px;
 }
 
 .icon-margin{
@@ -14,10 +14,89 @@
 
 .icon-pad{
     padding: 25px;
-    font-size: 25px;
 }
 
 .first-block-pad{
-    padding-right: 200px;
-    padding-top: 35px;
+    width: 17%;
+    padding-top: 15px;
+}
+
+.button-style{
+    border-radius: 25px;
+    padding: 7px 15px 7px 15px;
+}
+
+.width-btn{
+    width: 75%;
+}
+
+.position-select-i{
+    position: relative;
+    margin-right: -32px;
+}
+
+.sec-block-pad input[type=text]{
+    padding-left: 40px;
+}
+
+.position-select-i-2{
+    position: relative;
+    margin-left: -35px;
+}
+
+.pad-left{
+    padding-left: 20px;
+}
+
+.padtop{
+    padding-top: 15px;
+}
+
+.list-pad-top{
+    padding: 5px 15px 0px 0px;
+}
+
+.eric-pad{
+    padding: 10px;
+}
+
+.select-icon{
+    padding-top: 10px;
+}
+
+.compose-pad{
+    padding-bottom: 15px;
+}
+
+.point-pad{
+    padding-left: 80px;
+}
+
+.scroll-page{
+    height: 1000vh;
+}
+
+.margin-top{
+    position: absolute;
+    margin: 100px 0px 0px -90px;
+}
+
+.margin{
+    position: absolute;
+    margin: 120px 0px 0px -90px;
+}
+
+.user{
+    position: absolute;
+    margin: 111px 0px 0px 73px;
+}
+
+.commenting{
+    position: absolute;
+    margin: 111px 0px 0px 113px;
+}
+
+.phone{
+    position: absolute;
+    margin: 111px 0px 0px 155px
 }
