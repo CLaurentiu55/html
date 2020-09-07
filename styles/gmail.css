@@ -74,6 +74,7 @@
 
 .scroll-page{
     height: 1000vh;
+    color: rgb(182, 179, 179);
 }
 
 .margin-top{
@@ -99,4 +100,61 @@
 .phone{
     position: absolute;
     margin: 111px 0px 0px 155px
+}
+
+.font{
+    font-size: xx-large;
+}
+
+.border{
+    background-color: red;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.menu-bar{
+    padding: 20px 20px 20px 5px;
+}
+
+.refresh{
+    padding: 10px 20px 10px 10px;
+}
+
+.checkbox{
+    padding-left: 20px;
+}
+
+.padtop-1px{
+    padding-top: 1px;
+}
+
+.keyboard{
+    padding: 4px 8px 0px 0px;
+}
+
+.arrow-r{
+    padding: 5px 34px 0px 0px;
+}
+
+.arrow-l{
+    padding: 5px 25px 0px 20px;
+}
+
+.button-width{
+    width: 20%;
+}
+
+.top-pad{
+    padding: 5px 10px 0px 0px;
+}
+
+.pl{
+    padding-left: 200px;
+}
+
+.p{
+    padding: 10px;
+}
+
+.bkg{
+    background-color: rgb(243, 240, 240);
 }
