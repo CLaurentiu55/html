@@ -28,15 +28,20 @@
                     <hr>
                 </div>
                 <div class="compose-pad">
-                    <button class="btn-light button-style"><span class="font">+</span> Compose</button>
+                    <button class="btn-light button-style">
+                        <div>
+                            <span class="font fl">+</span> 
+                            <span class="button-fr">Compose</span>
+                        </div>
+                    </button>
                 </div>
                 <div>
-                    <button class="width-btn border"><i class="fa fa-inbox fl list-pad-top"></i> <span class="fl">Inbox</span></button>
-                    <button class="width-btn btn btn-light"><i class="fa fa-star fl list-pad-top"></i> <span class="fl">Starred</span></button>
-                    <button class="width-btn btn btn-light"><i class="fa fa-clock-o fl list-pad-top"></i> <span class="fl">Snoozed</span></button>
-                    <button class="width-btn btn btn-light"><i class="fa fa-paper-plane fl list-pad-top"></i> <span class="fl">Sent</span></button>
-                    <button class="width-btn btn btn-light"><i class="fa fa-file fl list-pad-top"></i> <span class="fl">Drafts</span> <span class="fr">1</span></button>
-                    <button class="width-btn btn btn-light"><i class="fa fa-chevron-down fl list-pad-top"></i> <span class="fl">More</span></button>
+                    <button class="width-btn border"><i class="fa fa-inbox fl list-pad-top color"></i> <span class="fl color">Inbox</span></button>
+                    <button class="width-btn btn btn-light"><i class="fa fa-star fl list-pad-top grey"></i> <span class="fl grey">Starred</span></button>
+                    <button class="width-btn btn btn-light"><i class="fa fa-clock-o fl list-pad-top grey"></i> <span class="fl grey">Snoozed</span></button>
+                    <button class="width-btn btn btn-light"><i class="fa fa-paper-plane fl list-pad-top grey"></i> <span class="fl grey">Sent</span></button>
+                    <button class="width-btn btn btn-light"><i class="fa fa-file fl list-pad-top grey"></i> <span class="fl black">Drafts</span> <span class="fr grey">1</span></button>
+                    <button class="width-btn btn btn-light"><i class="fa fa-chevron-down fl list-pad-top grey"></i> <span class="fl grey">More</span></button>
                     <hr>
                 </div>
                 <div>
@@ -67,13 +72,14 @@
             <div class="sec-block-pad fl">
                 <div>
                     <i class="fa fa-search icon-margin position-select-i"></i>
-                <input type="text" placeholder="Search mail" class="searchbarwidth">
-                <i class="fa fa-bars icon-pad fr fa-lg"></i>
+                <input type="text" placeholder="Search mail" class="searchbarwidth search-grey">
+                <i class="fa fa-bars icon-pad fr fa-lg black"></i>
                 <i class="fa fa fa-sort-desc position-select-i-2"></i>
-                <i class="fa fa-cog fr icon-pad fa-lg"></i>
-                <i class="fa fa-question-circle-o fr icon-pad fa-lg"></i>
+                <i class="fa fa-cog fr icon-pad fa-lg black"></i>
+                <i class="fa fa-question-circle-o fr icon-pad fa-lg black"></i>
                 </div>
                 <div>
+                    <hr>
                     <span class="checkbox">
                         <input type="checkbox">
                         <i class="fa fa fa-sort-desc fr padtop-1px"></i>
@@ -85,30 +91,102 @@
                     <i class="fa fa fa-sort-desc menu-bar"></i>
                     <i class="fa fa-refresh refresh"></i>
                     <i class="fa fa-ellipsis-v"></i>
+                    <hr>
                 </div>
                 <div>
-                    <button class="btn btn-outline-danger button-width"><i class="fa fa-inbox fl top-pad"></i> <span class="fl">Primary</span></button>
-                    <button class="btn btn-light button-width"><i class="fa fa-users fl top-pad"></i> <span class="fl">Social</span></button>
-                    <button class="btn btn-light button-width"><i class="fa fa-tag fl top-pad"></i> <span class="fl">Promotions</span></button>
+                    <div class="button-width input bbt fl">
+                        <i class="fa fa-inbox fl top-pad red"></i> 
+                        <span class="fl red">Primary</span>
+                    </div>
+                    <div class="button-width white fl">
+                        <i class="fa fa-users fl top-pad"></i> 
+                        <span class="fl">Social</span>
+                    </div>
+                    <div class="button-width white fl">
+                        <i class="fa fa-tag fl top-pad"></i> 
+                        <span class="fl">Promotions</span>
+                    </div>
                 </div>
                 <div>
-                    <ul class="bkg">
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon <span class="pl">Amazon security alert: Unusual sign-in attempt defect Eric Jesse, We detected an unusual...</span> <span class="fr">Sep 3</span></li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon 7</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com 8</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com 4</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Google</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com 3</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> order-update@amazon</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com 11</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon.com</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Amazon Prime</li>
-                        <li><input type="checkbox"> <i class="fa fa-star-o p"></i> Digital Ocean</li>
-                    </ul>
+                    <table class="bkg table-width">
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon</span></td>
+                                <td><span class="black">Amazon security alert: Unusual sign-in attempt detected</span><span> - Unusual sign-in attempt detected Eric Jesse, We detected an unusual...</span></td>
+                                <td> <span class="fr">Sep 3</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon 7</span></td>
+                                <td><span class="black">Amazon security alert: Unusual sign-in attempt detected</span><span> - Unusual sign-in attempt detected We detected an unusual sign-in att...</span></td>
+                                <td><span class="fr">Sep 3</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com</span></td>
+                                <td><span class="black">Help us improve Amazon and recieve a $3 Amazon.com Gift Card </span><span>- Amazon.com Your Amazon Today's Deals Start survey Dear...</span></td>
+                                <td><span class="fr">Aug 30</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com 8</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - To authenticate please use the following One Time Password (OTP): 705723 Do not share this OTP w...</span></td>
+                                <td><span class="fr">Aug 28</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - To authenticate please use the following One Time Password (OTP): 468992 Do not share this OTP w...</span></td>
+                                <td><span class="fr">Aug 23</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon</span></td>
+                                <td><span class="black">Amazon security alert: Sign-in from new device detected</span><span> - Sign-in from new device detected We detected a sign-in to your acco...</span></td>
+                                <td><span class="fr">Aug 14</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - To authenticate please use the following One Time Password (OTP): 862961 Do not share this OTP w...</span></td>
+                                <td><span class="fr">Aug 14</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com 4</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - 493608 Do not share this OTP with anyone. Amazon takes your account security very seriously.Amaz...</span></td>
+                                <td><span class="fr">Aug 13</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Google</span></td>
+                                <td><span class="black">Security alert</span><span> - New device signed in togogogivit@gmail.comYour Google Account was just signed in to from a new Windows d...</span></td>
+                                <td><span class="fr">Aug 7</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com 3</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - 234492 Do not share this OTP with anyone. Amazon takes your account security very seriously.Amaz...</span></td>
+                                <td><span class="fr">Aug 7</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">order-update@amazon</span></td>
+                                <td><span class="black">Your Amazon.com order of "Reachargeable Wireless Mouse..." has been canceled.</span><span> - Amazon.com Your Orders | Your Account | A...</span></td>
+                                <td><span class="fr">Aug 7</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com 11</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - To authenticate please use the following One Time Password (OTP): 359175 Do not share this OTP w...</span></td>
+                                <td><span class="fr">Aug 6</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon.com</span></td>
+                                <td><span class="black">Amazon Authentication</span><span> - To authenticate please use the following One Time Password (OTP): 710156 Do not share this OTP w...</span></td>
+                                <td><span class="fr">Aug 5</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Amazon Prime</span></td>
+                                <td><span class="black">Eric Jesse, Welcome to Amazon Prime</span><span> - Your Amazon Prime Free Trial begins today. Amazon.com Your Prime | Today's Deals | ...</span></td>
+                                <td> <span class="fr">Aug 3</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="larger"> <i class="fa fa-star-o p"></i> <span class="black">Digital Ocean</span></td>
+                                <td><span>DigitalOcean Payment Receipt</span><span> - Hello GogoGivit! This is a receipt for your latest DigitalOcean.-----------------------------------...</span></td>
+                                <td><span class="fr">Aug 2</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

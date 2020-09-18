@@ -1,6 +1,7 @@
 .searchbarwidth {
     width: 45%;
     overflow: auto;
+    padding: 5px 45px;
 }
 
 .sec-block-pad{
@@ -13,7 +14,7 @@
 }
 
 .icon-pad{
-    padding: 25px;
+    padding: 15px;
 }
 
 .first-block-pad{
@@ -23,7 +24,7 @@
 
 .button-style{
     border-radius: 25px;
-    padding: 7px 15px 7px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 .width-btn{
@@ -74,7 +75,7 @@
 
 .scroll-page{
     height: 1000vh;
-    color: rgb(182, 179, 179);
+    color: rgb(119, 119, 119);
 }
 
 .margin-top{
@@ -103,11 +104,11 @@
 }
 
 .font{
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 .border{
-    background-color: red;
+    background-color: rgb(255, 208, 208);
     border-radius: 0px 15px 15px 0px;
 }
 
@@ -144,7 +145,7 @@
 }
 
 .top-pad{
-    padding: 5px 10px 0px 0px;
+    padding: 5px 15px 0px 0px;
 }
 
 .pl{
@@ -156,5 +157,95 @@
 }
 
 .bkg{
-    background-color: rgb(243, 240, 240);
+    background-color: #eee;
+}
+
+.align-list{
+    float: left;
+    text-align: left;
+}
+
+.table-width{
+    width: 100%;
+}
+
+.black{
+    color: black;
+}
+
+.color{
+    color: red;
+}
+
+.white{
+    background: white;
+}
+
+.search-grey{
+    background-color: rgb(238, 238, 238);
+}
+
+th, td {
+    padding: 7px 0px 10px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+.grey{
+    color: grey;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .btn-light{
+    color: grey;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+
+input.larger {
+    width: 17px;
+    height: 15px;
+  }
+
+.input {
+    text-decoration:underline;
+    display:inline-block;
+}
+
+.border-bottom{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 0 8px;
+    position: absolute;
+    right: 0;
+}
+
+.bbt{
+    padding-bottom: 0px;
+    border-bottom: red solid;
+    margin-bottom: -15px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.red{
+    color: red;
+}
+
+.button-fr{
+    float: right;
+    margin-top: 29px;
 }
